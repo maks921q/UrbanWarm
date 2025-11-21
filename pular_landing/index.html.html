@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Чоловічий зимовий комплект Pular + пуховик</title>
+  <meta name="description" content="Чоловічий зимовий комплект з мікрофлісу Pular + пуховик на еко-пуху. Чорний та графітовий кольори. Оплата при отриманні." />
+  <style>
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top, #111827 0, #020617 55%);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #f9fafb;
+    }
+  </style>
+</head>
+<body>
+
+  <style>
+  .pular-landing {
+    --accent: #f97316;
+    --accent2: #fb7185;
+    --bg: #020617;
+    --card: #0b1120;
+    --border: #1f2937;
+    --text: #f9fafb;
+    --muted: #9ca3af;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: var(--text);
+    background: radial-gradient(circle at top, #111827 0, #020617 55%);
+    padding: 16px 12px 32px;
+  }
+
+  .pular-landing * {
+    box-sizing: border-box;
+  }
+
+  .pular-wrap {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  .pular-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+
+  .pular-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .pular-logo-mark {
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    background: radial-gradient(circle at 30% 10%, #fff 0, #f97316 40%, #111827 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .pular-logo-text {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .pular-badge-top {
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.6);
+    color: var(--muted);
+    background: rgba(15, 23, 42, 0.9);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .pular-badge-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 999px;
+    background: #22c55e;
+    box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.3);
+  }
+
+  .pular-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    gap: 22px;
+    align-items: center;
+    margin-bottom: 26px;
+  }
+
+  @media (max-width: 860px) {
+    .pular-hero {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .pular-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .pular-hero-title {
+    font-size: clamp(24px, 5vw, 32px);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .pular-hero-sub {
+    font-size: 14px;
+    color: #e5e7eb;
+    margin-bottom: 14px;
+  }
+
+  .pular-hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .pular-pill {
+    font-size: 11px;
+    padding: 6px 11px;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.5);
+    color: var(--muted);
+    background: rgba(15, 23, 42, 0.9);
+  }
+
+  .pular-pill-accent {
+    border-color: rgba(248, 113, 113, 0.7);
+    background: rgba(248, 113, 113, 0.18);
+    color: #fed7d7;
+  }
+
+  .pular-price {
+    background: radial-gradient(circle at 0 0, rgba(248, 113, 113, 0.4), transparent 55%),
+      #020617;
+    border-radius: 16px;
+    border: 1px solid rgba(148, 163, 184, 0.5);
+    padding: 12px 14px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) auto;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: 640px) {
+    .pular-price {
+      grid-template-columns: minmax(0,1fr);
+    }
+  }
+
+  .pular-price-line {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+
+  .pular-price-current {
+    font-size: 26px;
+    font-weight: 700;
+    color: #f97373;
+  }
+
+  .pular-price-old {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: var(--muted);
+  }
+
+  .pular-price-note {
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 3px;
+  }
+
+  .pular-price-discount {
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: #f97316;
+    color: #111827;
+    font-size: 11px;
+    font-weight: 700;
+    justify-self: flex-end;
+  }
+
+  .pular-cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .pular-btn-primary,
+  .pular-btn-ghost {
+    border-radius: 999px;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+  }
+
+  .pular-btn-primary {
+    flex: 1 1 180px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    color: #0b1120;
+    box-shadow: 0 10px 25px rgba(248, 113, 113, 0.3);
+    text-align: center;
+  }
+
+  .pular-btn-ghost {
+    flex: 1 1 140px;
+    background: rgba(15, 23, 42, 0.95);
+    border: 1px solid rgba(148, 163, 184, 0.7);
+    color: var(--muted);
+    text-align: center;
+  }
+
+  .pular-secure-note {
+    font-size: 11px;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .pular-secure-note span {
+    width: 14px;
+    height: 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.7);
+    font-size: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pular-hero-media {
+    background: radial-gradient(circle at top, #111827 0, #020617 55%);
+    border-radius: 20px;
+    border: 1px solid rgba(55, 65, 81, 0.8);
+    padding: 10px;
+  }
+
+  .pular-hero-mainimg {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(148, 163, 184, 0.6);
+    margin-bottom: 10px;
+  }
+
+  .pular-hero-mainimg img,
+  .pular-thumb img,
+  .pular-gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .pular-hero-thumbs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .pular-thumb {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(75, 85, 99, 0.8);
+    position: relative;
+  }
+
+  .pular-thumb-label {
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    padding: 3px 8px;
+    font-size: 10px;
+    border-radius: 999px;
+    background: rgba(15, 23, 42, 0.8);
+  }
+
+  .pular-section {
+    margin-bottom: 24px;
+  }
+
+  .pular-section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .pular-section-sub {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+
+  .pular-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px;
+  }
+
+  .pular-card {
+    background: var(--card);
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    padding: 11px 12px;
+    font-size: 13px;
+  }
+
+  .pular-card h3 {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .pular-card p {
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .pular-list {
+    list-style: none;
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .pular-list li {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 5px;
+    color: #e5e7eb;
+  }
+
+  .pular-list li span {
+    color: var(--accent);
+    font-size: 12px;
+    margin-top: 1px;
+  }
+
+  .pular-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+
+  .pular-table th,
+  .pular-table td {
+    padding: 8px 8px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .pular-table th {
+    text-align: left;
+    color: var(--muted);
+    font-weight: 500;
+  }
+
+  .pular-table td:last-child {
+    text-align: right;
+  }
+
+  .pular-tag-free {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 11px;
+    padding: 3px 7px;
+    border-radius: 999px;
+    background: rgba(34, 197, 94, 0.16);
+    border: 1px solid rgba(34, 197, 94, 0.7);
+    color: #bbf7d0;
+  }
+
+  .pular-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px;
+    font-size: 13px;
+  }
+
+  .pular-step {
+    position: relative;
+    padding: 10px 10px 10px 30px;
+    border-radius: 14px;
+    border: 1px dashed rgba(148, 163, 184, 0.7);
+    background: var(--card);
+  }
+
+  .pular-step-num {
+    position: absolute;
+    left: 9px;
+    top: 9px;
+    width: 16px;
+    height: 16px;
+    border-radius: 999px;
+    border: 1px solid rgba(248, 113, 113, 0.8);
+    background: rgba(248, 113, 113, 0.15);
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fecaca;
+  }
+
+  .pular-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 8px;
+  }
+
+  .pular-reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 10px;
+  }
+
+  .pular-review {
+    background: var(--card);
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    padding: 9px 10px;
+    font-size: 12px;
+  }
+
+  .pular-review-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3px;
+  }
+
+  .pular-stars {
+    color: #facc15;
+    font-size: 12px;
+  }
+
+  .pular-form-wrap {
+    max-width: 480px;
+  }
+
+  .pular-form-field {
+    margin-bottom: 9px;
+    font-size: 12px;
+  }
+
+  .pular-form-label {
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  .pular-form-input,
+  .pular-form-select {
+    width: 100%;
+    padding: 8px 9px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: #020617;
+    color: #f9fafb;
+    font-size: 13px;
+  }
+
+  .pular-form-input:focus,
+  .pular-form-select:focus {
+    outline: 1px solid #4b5563;
+  }
+
+  .pular-footer {
+    margin-top: 18px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(55, 65, 81, 0.8);
+    font-size: 11px;
+    color: var(--muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: space-between;
+  }
+
+  .pular-footer a {
+    color: var(--muted);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  @media (max-width: 480px) {
+    .pular-landing {
+      padding: 14px 10px 28px;
+    }
+    .pular-section-title {
+      font-size: 16px;
+    }
+  }
+  </style>
+
+  <div class="pular-landing">
+    <div class="pular-wrap">
+
+      <div class="pular-header">
+        <div class="pular-logo">
+          <div class="pular-logo-mark">UW</div>
+          <div>
+            <div class="pular-logo-text">Urban Warm</div>
+            <div style="font-size:11px;color:#9ca3af;">Зимовий чоловічий одяг</div>
+          </div>
+        </div>
+        <div class="pular-badge-top">
+          <span class="pular-badge-dot"></span>
+          Зима 2025 · Нове надходження
+        </div>
+      </div>
+
+      <div class="pular-hero">
+        <div>
+          <h1 class="pular-hero-title">
+            Чоловічий зимовий комплект<br>
+            мікрофліс Pular + пуховик + шапка 🔥
+          </h1>
+          <p class="pular-hero-sub">
+            Максимальне тепло без зайвої ваги: м’який мікрофліс Pular, об’ємний пуховик на еко-пуху
+            та шапка у подарунок. Чорний та графітовий кольори — готовий образ на зиму за однією ціною.
+          </p>
+
+          <div class="pular-hero-badges">
+            <span class="pular-pill pular-pill-accent">−17% зимова знижка</span>
+            <span class="pular-pill">Виробник: Туреччина 🇹🇷</span>
+            <span class="pular-pill">Кольори: чорний, графіт</span>
+          </div>
+
+          <div class="pular-price">
+            <div>
+              <div class="pular-price-line">
+                <div class="pular-price-current">2990 грн</div>
+                <div class="pular-price-old">3600 грн</div>
+              </div>
+              <div style="font-size:12px;">Комплект: пуховик + костюм + шапка 🎁</div>
+              <div class="pular-price-note">
+                Оплата при отриманні · Примірка на відділенні Нової пошти
+              </div>
+            </div>
+            <div class="pular-price-discount">−17% • економія 610 грн</div>
+          </div>
+
+          <div class="pular-cta-row">
+            <button class="pular-btn-primary" onclick="document.getElementById('pular-order').scrollIntoView({behavior:'smooth'})">
+              Замовити зі знижкою
+            </button>
+            <button class="pular-btn-ghost" onclick="document.getElementById('pular-details').scrollIntoView({behavior:'smooth'})">
+              Детальніше про комплект
+            </button>
+          </div>
+
+          <div class="pular-secure-note">
+            <span>✓</span>
+            Жодних передплат — оплата лише при отриманні на відділенні
+          </div>
+        </div>
+
+        <div class="pular-hero-media">
+          <div class="pular-hero-mainimg">
+            <img src="img/black_set.jpg" alt="Чоловічий зимовий комплект Nike чорний">
+          </div>
+          <div class="pular-hero-thumbs">
+            <div class="pular-thumb">
+              <img src="img/graphite_set.jpg" alt="Чоловічий зимовий комплект Nike графітовий">
+              <div class="pular-thumb-label">Графітовий комплект</div>
+            </div>
+            <div class="pular-thumb">
+              <img src="img/puffer_front.jpg" alt="Чоловічий пуховик Nike спереду">
+              <div class="pular-thumb-label">Пуховик Nike</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="pular-details" class="pular-section">
+        <h2 class="pular-section-title">Що входить у комплект?</h2>
+        <p class="pular-section-sub">
+          Повний зимовий набір з якісних матеріалів. Просто обери розмір — і готовий теплий образ вже чекає.
+        </p>
+
+        <div class="pular-features">
+          <div class="pular-card">
+            <h3>Костюм з мікрофлісу Pular</h3>
+            <ul class="pular-list">
+              <li><span>•</span> худі з капюшоном та стяжками внизу</li>
+              <li><span>•</span> штани з манжетами та шнурком на талії</li>
+              <li><span>•</span> матеріал: мікрофліс Pular — теплий, м’який, дихає</li>
+              <li><span>•</span> розміри: S / M / L / XL / XXL</li>
+            </ul>
+          </div>
+
+          <div class="pular-card">
+            <h3>Пуховик на еко-пуху</h3>
+            <ul class="pular-list">
+              <li><span>•</span> верх: щільна плащівка, не пропускає вітер та сніг</li>
+              <li><span>•</span> наповнювач: якісний еко-пух</li>
+              <li><span>•</span> глибокі кишені, стяжки внизу</li>
+              <li><span>•</span> ідеально поєднується з костюмом з комплекту</li>
+            </ul>
+          </div>
+
+          <div class="pular-card">
+            <h3>Шапка у подарунок 🎁</h3>
+            <p>
+              До повного комплекту ми додаємо шапку в подарунок — без доплат.
+              Стильна, тепла та пасує до всього образу.
+            </p>
+            <span class="pular-tag-free">Шапка 0 грн при замовленні комплекту</span>
+          </div>
+
+          <div class="pular-card">
+            <h3>Кому підійде</h3>
+            <p>
+              Для щоденної носки, прогулянок, поїздок, роботи на вулиці чи активного відпочинку.
+              Комфортно при зимових температурах, особливо у поєднанні з термобілизною.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pular-section">
+        <h2 class="pular-section-title">Ціни та варіанти замовлення</h2>
+        <p class="pular-section-sub">
+          Можна взяти повний комплект зі знижкою або окремо пуховик чи костюм.
+        </p>
+
+        <table class="pular-table">
+          <thead>
+            <tr>
+              <th>Варіант</th>
+              <th>Стара ціна</th>
+              <th>Нова ціна</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Комплект: пуховик + костюм + шапка 🎁</td>
+              <td>3600 грн</td>
+              <td><strong>2990 грн</strong></td>
+            </tr>
+            <tr>
+              <td>Пуховик окремо</td>
+              <td>—</td>
+              <td><strong>1390 грн</strong></td>
+            </tr>
+            <tr>
+              <td>Костюм окремо</td>
+              <td>—</td>
+              <td><strong>1690 грн</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="pular-section">
+        <h2 class="pular-section-title">Живі фото товару</h2>
+        <p class="pular-section-sub">
+          Детальні фото логотипів, бірок та матеріалу, щоб ви бачили якість до замовлення.
+        </p>
+
+        <div class="pular-gallery">
+          <div class="pular-gallery-item">
+            <img src="img/logo_graphite.jpg" alt="Логотип Nike на графітовому мікрофлісі">
+          </div>
+          <div class="pular-gallery-item">
+            <img src="img/tag_graphite.jpg" alt="Бірка Nike всередині графітового худі">
+          </div>
+          <div class="pular-gallery-item">
+            <img src="img/logo_black.jpg" alt="Логотип Nike на чорному мікрофлісі">
+          </div>
+          <div class="pular-gallery-item">
+            <img src="img/tag_black.jpg" alt="Бірка Nike всередині чорного худі">
+          </div>
+          <div class="pular-gallery-item">
+            <img src="img/puffer_back.jpg" alt="Чорний пуховик Nike ззаду">
+          </div>
+          <div class="pular-gallery-item">
+            <img src="img/puffer_only_front.jpg" alt="Чорний пуховик Nike спереду крупно">
+          </div>
+        </div>
+      </div>
+
+      <div id="pular-order" class="pular-section">
+        <h2 class="pular-section-title">Залишити заявку на замовлення</h2>
+        <p class="pular-section-sub">
+          Заповніть форму — ми перетелефонуємо для підтвердження замовлення та підбору розміру.
+        </p>
+
+        <div class="pular-card pular-form-wrap">
+          <div class="pular-form-field">
+            <label class="pular-form-label">Ваше ім’я</label>
+            <input class="pular-form-input" type="text" placeholder="Введіть ім’я">
+          </div>
+          <div class="pular-form-field">
+            <label class="pular-form-label">Телефон (Viber / Telegram)</label>
+            <input class="pular-form-input" type="tel" placeholder="+38 (0__) ___ __ __">
+          </div>
+          <div class="pular-form-field">
+            <label class="pular-form-label">Варіант</label>
+            <select class="pular-form-select">
+              <option>Комплект: пуховик + костюм + шапка (2990 грн)</option>
+              <option>Пуховик окремо (1390 грн)</option>
+              <option>Костюм окремо (1690 грн)</option>
+            </select>
+          </div>
+          <div class="pular-form-field">
+            <label class="pular-form-label">Розмір</label>
+            <select class="pular-form-select">
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+              <option>XXL</option>
+            </select>
+          </div>
+          <div class="pular-form-field">
+            <label class="pular-form-label">Місто / відділення Нової пошти</label>
+            <input class="pular-form-input" type="text" placeholder="Наприклад: Київ, НП №5">
+          </div>
+          <button class="pular-btn-primary" type="button">
+            Відправити заявку
+          </button>
+          <div class="pular-secure-note" style="margin-top:6px;">
+            <span>i</span>
+            Ми зв’яжемося з вами протягом робочого дня для підтвердження замовлення.
+          </div>
+        </div>
+      </div>
+
+      <div class="pular-footer">
+        <div>© 2025 Urban Warm. Всі права захищені.</div>
+        <div>
+          <a href="#">Політика конфіденційності</a> ·
+          <a href="#">Угода користувача</a> ·
+          <a href="#">Повернення та обмін</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
